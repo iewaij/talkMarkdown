@@ -27,7 +27,9 @@ On the other hand, academics and power users tend to use LaTeX for complex docum
 \date{April 2021}
 \begin{document}
 \maketitle
-Some of the \textbf{greatest} discoveries in \textit{science} were made by \textbf{\textit{accident}}.
+Some of the \textbf{greatest}
+discoveries in \textit{science}
+were made by \textbf{\textit{accident}}.
 \end{document}
 ```
 
@@ -42,7 +44,9 @@ fontsize: 12pt
 papersize: a4
 ---
 
-Some of the **greatest** discoveries in *science* were made by ***accident***.
+Some of the **greatest**
+discoveries in *science*
+were made by ***accident***.
 ```
 
 # Learn Markdown Syntax with Typora
@@ -223,6 +227,10 @@ Citations can be inserted in the header as well, though you need generate a BibT
 bibliography: citation.bib
 csl: harvard-cite-them-right.csl
 ---
+
+R Markdown is good [@solove_nothing_2012].
+
+@solove_nothing_2012 believes that R Markdown is good.
 ```
 
 ## Exercise 3: Thesis
@@ -246,7 +254,7 @@ You can generate tables using Markdown syntax only.
 | Italy          | 2,106,287 |
 | Spain          | 1,461,552 |
 | Netherlands    | 1,012,598 |
-Table Title: This is table caption
+: This is table caption
 ```
 
 Or run the code to generate a table. Simply add a `{r}` in your code fence, the code then become executable in RStudio and generate table and graphs for you the report.

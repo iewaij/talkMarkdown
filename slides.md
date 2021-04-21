@@ -8,7 +8,7 @@ aspectratio: 169
 linkcolor: true
 ---
 
-## Preface
+## Intro
 ### Outline
 
 1. Why Markdown?
@@ -297,6 +297,10 @@ Citations can be inserted in the header as well, though you need generate a BibT
 bibliography: citation.bib
 csl: harvard-cite-them-right.csl
 ---
+
+R Markdown is good [@solove_nothing_2012].
+
+@solove_nothing_2012 believes that R Markdown is good.
 ```
 
 ## Exercise 3: Thesis
@@ -321,7 +325,7 @@ You can generate tables using Markdown syntax only.
 | Italy          | 2,106,287 |
 | Spain          | 1,461,552 |
 | Netherlands    | 1,012,598 |
-Table Title: This is table caption
+: This is table caption
 ```
 
 ## Tables
@@ -372,7 +376,7 @@ If you are comfortable with command line and do not need code execution, simply 
 pandoc --citeproc --pdf-engine=xelatex -o your_work.pdf your_work.md
 ```
 
-## Conclusion
+## Outro
 
 > We shape our tools and our tools shape us.
 > -- Marshall McLuhan
