@@ -53,17 +53,11 @@ A document typically is divided into multiple sections. To make a new section, y
 
 ```markdown
 # Introduction
-
 ## Motivation
-
 ## History
-
 ### 1910s 
-
 ### 1920S
-
 # Main Texts
-
 # Conclusion
 ```
 
@@ -197,11 +191,12 @@ geometry:
   - left=30mm
   - right=30mm
   - bottom=30mm
-  - heightrounded
 fontsize: 12
-toc: true
-toc_depth: 2
-documentclass: article
+documentclass: report
+output: 
+  pdf_document:
+    toc: true
+    number_sections: true
 ---
 ```
 
@@ -230,12 +225,13 @@ csl: harvard-cite-them-right.csl
 ---
 ```
 
-## Exercise 3: Theses
+## Exercise 3: Thesis
 
-1. Generate a thesis with author name, date, abstract and a table of contents.
-2. Cite the book "Forecasting: Principles and Practice".
+1. Generate a thesis with title, author, date, abstract and a table of contents.
+2. The thesis should use "report" as documentclass.
+3. Cite the book "Forecasting: Principles and Practice".
 
-**Bonus:** Numbered each section. For example, "Introduction" is "1. Introduction". You may not write these numbers explicitly.
+**Bonus:** Number each section. For example, "Introduction" has a "Chapter 1" before it. You may not write these texts explicitly.
 
 ## Table and Graphs
 
@@ -250,6 +246,7 @@ You can generate tables using Markdown syntax only.
 | Italy          | 2,106,287 |
 | Spain          | 1,461,552 |
 | Netherlands    | 1,012,598 |
+Table Title: This is table caption
 ```
 
 Or run the code to generate a table. Simply add a `{r}` in your code fence, the code then become executable in RStudio and generate table and graphs for you the report.
@@ -274,7 +271,11 @@ ggplot(data = mpg) +
 
 ## Templates
 
-After install `stevetemplates` and `binb`, you can either start using the templates when create a new R Markdown document or put the template in the `output` field. However, different templates require different dependencies from LaTeX and sometimes they may not run on your computer, this requires some basic knowledge of programming and LaTeX to tweak and debug. Here are some of templatates that I find clean and beautiful:
+After install `stevetemplates` and `binb`, you can either start using the templates when create a new R Markdown document or put the template in the `output` field.
+
+![Start with a Template](figures/template.png){ height=65% }
+
+However, different templates require different dependencies from LaTeX and sometimes they may not run on your computer. It requires some basic knowledge of programming and LaTeX to tweak and debug. Here are some of templatates that I find clean and beautiful:
 
 - [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates)
 - [eddelbuettel/binb](https://github.com/eddelbuettel/binb)
@@ -283,12 +284,13 @@ After install `stevetemplates` and `binb`, you can either start using the templa
 
 ## How R Markdown Works
 
-![](figures/rmarkdownflow.png)
+![R Markdown Worlflow](figures/rmarkdownflow.png)
 
 Internally, R Markdown run the code in the file and generate the output as well as the text you wrote in a Markdown file. This md file will then be translated into PDF or html using Pandoc. Therefore, if you are comfortable with command line and do not need code execution, simply run like this:
 
 ```markdown
-pandoc --citeproc --pdf-engine=xelatex -o your_work.pdf your_work.md
+pandoc --citeproc --pdf-engine=xelatex -o notes.pdf notes.md
+pandoc --pdf-engine=xelatex --to=beamer -o ./slides.pdf slides.md 
 ```
 
 # Conclusion

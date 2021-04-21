@@ -246,13 +246,13 @@ title: A Report Genrated by R Markdown
 author: Jiawei Li
 date: 21 April, 2021
 abstract: Here are some words.
+output: pdf_document
 ---
 
 Some texts.
 ```
 
 ## Metadata
-The margins, document class (article, report or book) and fontsize can be described as well.
 
 ```markdown
 ---
@@ -261,17 +261,18 @@ geometry:
   - left=30mm
   - right=30mm
   - bottom=30mm
-  - heightrounded
 fontsize: 12
-toc: true
-toc_depth: 2
-documentclass: article
+documentclass: report
+output: 
+  pdf_document:
+    toc: true
+    number_sections: true
 ---
 ```
 
 ## Pagebreak
 
-I usually add a `\pagebreak` after the header to separate the table of contents  from main contents. I also add another `\pagebreak` before references.
+You can also create intentional page breaks.
 
 ```markdown
 ---
@@ -298,13 +299,14 @@ csl: harvard-cite-them-right.csl
 ---
 ```
 
-## Exercise 3: Theses
+## Exercise 3: Thesis
 Open `exercises/3_thesis.Rmd` with RStudio and complete the following tasks:
 
-1. Generate a thesis with author name, date, abstract and a table of contents.
-2. Cite the book "Forecasting: Principles and Practice".
+1. Generate a thesis with title, author, date, abstract and a table of contents.
+2. The thesis should use "report" as documentclass.
+3. Cite the book "Forecasting: Principles and Practice".
 
-**Bonus:** Numbered each section. For example, "Introduction" is "1. Introduction". You may not write these numbers explicitly.
+**Bonus:** Number each section. For example, "Introduction" has a "Chapter 1" before it. You may not write these texts explicitly.
 
 ## Tables 
 
@@ -369,6 +371,7 @@ If you are comfortable with command line and do not need code execution, simply 
 ```markdown
 pandoc --citeproc --pdf-engine=xelatex -o your_work.pdf your_work.md
 ```
+
 ## Conclusion
 
 > We shape our tools and our tools shape us.
