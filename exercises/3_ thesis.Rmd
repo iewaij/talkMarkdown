@@ -1,0 +1,17 @@
+---
+abstract: Tell us what the future holds, so we may know that you are gods.
+---
+
+# Introduction
+
+Forecasting has fascinated people for thousands of years, sometimes being considered a sign of divine inspiration, and sometimes being seen as a criminal activity. [need citaion from Forecasting: Principles and Practice]
+
+# Content
+Maecenas vitae tempus sapien. Duis elementum arcu nibh, ut pellentesque metus tristique non. Duis ac dictum libero, quis sodales neque. Donec sapien nisl, dictum vitae ipsum ac, ornare semper mi. Suspendisse fermentum arcu quis turpis volutpat ultricies. Curabitur a rutrum risus. Maecenas feugiat aliquet justo, nec malesuada urna blandit vel. Nulla facilisi. Pellentesque elementum felis sed nisi suscipit, ut tincidunt velit feugiat. Duis suscipit nec justo a porttitor. Donec congue metus id odio rhoncus, et varius metus pulvinar. Proin placerat ex eu turpis aliquam fermentum at ac mi.
+
+Suspendisse mollis odio nibh, sit amet pulvinar ipsum molestie eget. Curabitur faucibus, mauris porta viverra ornare, justo sem finibus nisi, vel lobortis orci velit quis sapien. Sed ac posuere nunc. Suspendisse vestibulum sed justo vitae congue. Sed sit amet elit non neque vehicula pellentesque. Aliquam vel malesuada erat. Nunc luctus ultrices ex ut venenatis. Sed venenatis felis sit amet lectus sollicitudin, at varius velit finibus. Ut sit amet tristique tortor, in scelerisque leo. Nulla et est metus. Donec vel imperdiet lectus, at euismod dui. Phasellus placerat velit eget dolor hendrerit, vitae condimentum tortor euismod.
+
+# Conclusion
+Sed porttitor enim lorem, sed lobortis sapien dapibus vel. Suspendisse non ornare sapien, vel consequat massa. Maecenas varius sem nec quam sollicitudin consectetur. Integer tempus ultricies auctor. Ut condimentum arcu vel mi sagittis, sed fringilla sapien euismod. Aenean sed tincidunt est. Proin nibh sem, eleifend non euismod eget, dictum quis elit. Suspendisse id felis dapibus, congue enim sed, ultricies ipsum.
+
+# References
