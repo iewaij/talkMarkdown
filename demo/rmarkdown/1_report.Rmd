@@ -3,52 +3,9 @@ title: A Report Genrated by R Markdown
 author: Jiawei Li
 date: 20 April, 2021
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet libero justo. Pellentesque eget nibh ex. Aliquam tincidunt egestas lectus id ullamcorper. Proin tellus orci, posuere sed cursus at, bibendum ac odio. Nam consequat non ante eget aliquam. Nulla facilisis tincidunt elit. Nunc hendrerit pellentesque quam, eu imperdiet ipsum porttitor ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Duis vitae nibh mauris. Duis nec sem sit amet ante dictum mattis. Suspendisse diam velit, maximus eget commodo at, faucibus et nisi. Ut a pellentesque eros, sit amet suscipit eros. Nunc tincidunt quis risus suscipit vestibulum. Quisque eu fringilla massa.
-bibliography: citation.bib
-csl: harvard-cite-them-right.csl
-output:
-   pdf_document
+output: pdf_document
 ---
 
-# EU Countries Ordered by GDP
+# Introduction
 
-| Country        | GDP       |
-| -------------- | --------- |
-| Germany        | 4,319,286 |
-| United Kingdom | 3,124,650 |
-| France         | 2,938,271 |
-| Italy          | 2,106,287 |
-| Spain          | 1,461,552 |
-| Netherlands    | 1,012,598 |
-: A table of countries
-
-# A YouTube Channel
-
-[![A Thumbnail](1_thumbnail.jpg)](https://www.youtube.com/watch?v=mvz3LRK263E)
-
-# Citation
-
-R Markdown is good [@solove_nothing_2012].
-
-@solove_nothing_2012 believes that R Markdown is good.
-
-# Run Code
-```{r, include = FALSE, echo = FALSE}
-library(tidyverse)
-library(knitr)
-```
-
-```{r, include = FALSE, echo = FALSE}
-mpg
-```
-
-```{r}
-kable(mpg[1:5,], caption = "A table generated from code")
-```
-
-```{r, fig.cap = "A graph"}
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = class))
-```
-\pagebreak
-
-# References
+This some text.

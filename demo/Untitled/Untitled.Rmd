@@ -1,0 +1,38 @@
+---
+title: A minimal example
+subtitle: With a subtitle
+author: Matthias Vogelgesang
+date: \today
+institute: Centre for Modern Beamer Themes
+output: binb::metropolis
+fontsize: 12pt
+---
+
+# First Section
+
+## First Frame
+
+Hello, world!
+
+# Second Section
+
+## Second Frame
+
+### Bulleted Lists
+- Element A
+- Element B
+    - B.1
+    - B.2
+- Element C    
+
+# Elements
+
+## Typography
+
+```
+The theme provides sensible defaults to
+\emph{emphasize} text, \alert{accent} parts
+or show \textbf{bold} results.
+
+In Markdown, you can also use _emphasize_ and **bold**.
+```

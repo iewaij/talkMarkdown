@@ -7,17 +7,11 @@
 [![](figures/thumbnail.jpg)](https://www.youtube.com/watch?v=mvz3LRK263E)
 
 ```python
-print("The Roomba That Screams When it Bumps Into Stuff")
+print("The Roomba That Screams When it Bumps Into Stuff!")
 ```
 
 $$
-e^{ix} = \cos x + i \sin x
+e^{ix} = \cos n + i \sin m
 $$
 
-| a    | Aaa  |
-| ---- | ---- |
-| a    | 2    |
-| a    | s    |
-| a    | s    |
-| 1    | 3    |
 
